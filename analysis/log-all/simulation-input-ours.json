@@ -1,0 +1,64 @@
+{
+    "icon": "evtol.svg",
+    "takeoff_landing_type": "vertipad",
+    "autonomous": false,
+    "mtom": 24590.634163196642,
+    "empty_mass": 9578.469114962058,
+    "payload": 9247,
+    "flow_rate": 1849.4,
+    "can_scoop": true,
+    "scooping_distance": 8,
+    "span": 16.064,
+    "propulsion_input": {
+        "architecture": "conventional",
+        "total_propellant": 5765.1652825382525,
+        "reserve_propellant": 1200.4184845072832,
+        "propellant_unit": "kg",
+        "refueling_rate": 7.7,
+        "taxi_out_fc": {
+            "24590.634163196642": 0.00048216929731758116,
+            "15343.634163196642": 0.00030085557182738513
+        },
+        "taxi_in_fc": {
+            "24590.634163196642": 0.00048216929731758116,
+            "15343.634163196642": 0.00030085557182738513
+        },
+        "takeoff_fc": 1.481022333191617,
+        "transition_fc": 0.9412174411789784,
+        "retransition_fc": 0.10419279458908476,
+        "cruise_fc": {
+            "24590.634163196642": 5.648114129127694,
+            "15343.634163196642": 5.532040242926469
+        },
+        "cruise_climb_fc": {
+            "24590.634163196642": 1.3792589067943115,
+            "15343.634163196642": 0.16862934840343577
+        },
+        "cruise_descent_fc": {
+            "24590.634163196642": 0.00023230039627189245,
+            "15343.634163196642": 0.041364507721618426
+        },
+        "landing_fc": 0.6930172013682625,
+        "loiter_fc": 5.532040242926469,
+        "hover_fc": 1.709378174515845
+    },
+    "profile_parameters": {
+        "taxi_out_duration": 300.0,
+        "taxi_in_duration": 300.0,
+        "transition_duration": 20.0,
+        "retransition_duration": 20.0,
+        "takeoff_altitude": 59.997,
+        "takeoff_climb_rate": 7.0,
+        "takeoff_ground_speed": 0,
+        "cruise_altitude": 500.0,
+        "cruise_speed": 120,
+        "cruise_climb_rate": 10.0,
+        "cruise_climb_ground_speed": 80.0,
+        "cruise_descent_rate": 5.0,
+        "cruise_descent_ground_speed": 80.0,
+        "landing_altitude": 59.997,
+        "landing_descent_rate": 7.0,
+        "landing_ground_speed": 0,
+        "loiter_speed": 46.59
+    }
+}

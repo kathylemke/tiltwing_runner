@@ -1,0 +1,6 @@
+{
+  "power": {
+    "BSFC_general_kWs": 0.0001,
+    "hover_power_effic": 0.72
+  }
+}
