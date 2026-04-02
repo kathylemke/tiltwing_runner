@@ -1,0 +1,50 @@
+Guide final edits by Katherine Lemke
+Original author Khoa Nguyen
+
+[Optional] Install virtual environment
+1. Create a Python virtual environment:
+python3 -m venv p3-env
+
+2. Activate the virtual environment:
+p3-env\Scripts\activate
+
+3. Deactivating the virtual environment: 
+deactivate
+
+-----------------
+Pull everything from the same cfg-all folder
+Store everything in the local folder for appropiate calculations
+
+1. Energy Analysis
+cd analysis/mission-segment-energy/src
+python log_mission_segment_energy.py ../../cfg-all/test-all.json ../log/
+python plt_mission_segment_energy.py ../log/mission-segment-energy.csv ../plt/
+
+2. Power Analysis
+cd analysis/mission-segment-power/src
+python log_power_profile_all.py ../../cfg-all/test-all.json ../log/
+python plt_power_profile_all.py ../log/power-profile-all.csv ../plt/
+
+python log_power_all.py ../../cfg-all/test-all.json ../log/
+python plt_power_all.py ../log/fuel-consumed-all.csv ../plt/
+
+python log_segment_burn_all.py ../../cfg-all/test-all.json ../log/
+python plt_segment_burn_all.py ../log/fuel-burn-profile-all.csv ../plt/
+
+3. Weight Analysisc
+cd analysis/mission-segment-weight/src
+python log_mass_breakdown.py ../../cfg-all/test-all.json ../log/
+python plt_mass_breakdown.py ../log/mass-breakdown.csv ../plt/
+
+python log_mtow_iteration.py ../../cfg-all/test-all.json ../log/
+python plt_mtow_iteration.py ../log/mtow-iteration.csv ../plt/
+
+# added by KL
+4. Printing for DLR simulation
+cd analysis/simulation-outputs/src
+python sim_input.py ../cfg/test-all.json ../log/
+
+# added by KL
+5. Running it all together
+cd analysis/src-all
+python update_and_run.py ../cfg-all/test-all.json ../log-all/ ../plt-all/
